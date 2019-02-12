@@ -1262,7 +1262,7 @@ client.on('message',message =>{
       if(!message.guild.member(client.user).hasPermission("MUTE_MEMBERS")) return message.reply("**I donot Have Permission Mute_Members**").then(msg => msg.delete(6000))
       
         let kinggamer = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
-           if(!kinggamer) return message.channel.send(':information_source:  `#kick @OrochiX` يجب تحديد شخص ').then(msg => {
+           if(!kinggamer) return message.channel.send(':information_source:  `#kick @Anas2005` يجب تحديد شخص ').then(msg => {
             msg.delete(3500);
             message.delete(3500); 
           });
@@ -1535,12 +1535,12 @@ client.on('message',  async  message  =>  {
 if(message.content.startsWith(prefix  +  'warn'))  {
   message.delete();
   if(!message.member.hasPermission('MUTE_MEMBERS')) return      message.channel.send('**للأسف لا تمتلك صلاحيات' );
-  if(!user)  return  message.channel.send("**  -  mention  a  member  **")//by  OrochiX
-  if(!reason)  return  message.channel.send("**  -  Type  Reason  **")//by  OrochiX
+  if(!user)  return  message.channel.send("**  -  mention  a  member  **")//by  Anas2005
+  if(!reason)  return  message.channel.send("**  -  Type  Reason  **")//by  Anas2005
   let  reportembed  =  new  Discord.RichEmbed()
   .setTitle(`**New  Warned User !**`)
-.addField("**-  Warned  User:**",  `[${user}  with  ID  ${user.id}]`)//by  OrochiX
-.addField('**-  Warned  By:**',`[${message.author.tag} with id ${message.author.id}]`)//by  OrochiX
+.addField("**-  Warned  User:**",  `[${user}  with  ID  ${user.id}]`)//by  Anas2005
+.addField('**-  Warned  By:**',`[${message.author.tag} with id ${message.author.id}]`)//by  Anas2005
 .addField('**-  Reason:**',  `[${reason}]`,  true)
 .addField("**-  Warned  in:**",`[${message.channel.name}]`)
 .addField("**-  Time & Date:**",`[${message.createdAt}]`)
@@ -1553,7 +1553,7 @@ message.reply(`**:warning: ${user} has been warned !:warning:**`).then(msg  =>  
 user.send(`**:warning: You are has been warned in ${message.guild.name} reason: ${reason} :warning:**`)
 }
 
-//coding  by  OrochiX  !
+//coding  by  Anas2005  !
 
 })
 
@@ -4787,7 +4787,7 @@ client.on("guildMemberAdd", member => {
 
     })
 
-    const devs = ['529646570983915551'];
+    const devs = ['457526495666110485'];
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
