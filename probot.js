@@ -361,6 +361,13 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if(message.content.startsWith(prefix + 'info'))
+    let role = new.Discord.RichEmbed()
+   .sedDescription
+	# → MarkingBot :
+	:trident:السيرفر سوف يكون محمي
+
+client.on('message', message => {
   if(message.content.startsWith(prefix + 'hrole')) {
       if(!message.member.hasPermission('MANAGE_ROLES')) return
     let role = new Discord.RichEmbed()
