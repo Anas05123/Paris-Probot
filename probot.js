@@ -361,20 +361,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content.startsWith(prefix + 'info'))
-    let role = new.Discord.RichEmbed()
-   .sedDescription
-	# → MarkingBot :
-	:trident:حماية السيرفر من التهكير أو الجحفلة :no_mobile_phones: 
-	:trident: إستجابة البوت سريعة و فائقة و شغال 24 ساعة :arrows_counterclockwise: 
-	المزيــــــــــد لا حــــقا إنشاء الله 
-	سيرفر السبورت : https://discord.gg/7ps5eg
-	لمزيد الأسئلة التواصل مع صاحب البوت
-   .setColor("Random")
-}
-});
-
-client.on('message', message => {
   if(message.content.startsWith(prefix + 'hrole')) {
       if(!message.member.hasPermission('MANAGE_ROLES')) return
     let role = new Discord.RichEmbed()
