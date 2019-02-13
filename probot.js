@@ -371,6 +371,8 @@ client.on('message', message => {
 	سيرفر السبورت : https://discord.gg/7ps5eg
 	لمزيد الأسئلة التواصل مع صاحب البوت
    .setColor("Random")
+}
+});
 
 client.on('message', message => {
   if(message.content.startsWith(prefix + 'hrole')) {
